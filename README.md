@@ -40,8 +40,15 @@
 - 根本原因: ターゲット側の `PhotosPickerItem` 依存でビルド整合が崩れた
 - 解決策: `PHPickerViewController` ベースの `MultiPhotoPicker` に切替し、`UIImage` 配列を直接 `ViewModel` に受け渡し
 
+### 4) iOS検証時の画面回転警告
+- 症状: `All interface orientations must be supported unless the app requires full screen.`
+- 根本原因: Info.plist の `UISupportedInterfaceOrientations` が未指定
+- 解決策: `project.yml` に iPhone / iPad の対応向きを明示し、再生成後に警告解消
+
 ## 作業ログ
 ### 変更ファイル
+- `.github/workflows/ci.yml`
+- `package.json`
 - `ios/GigaPanSwift/project.yml`
 - `ios/GigaPanSwift/Sources/GigaPanSwiftApp.swift`
 - `ios/GigaPanSwift/Sources/Models/PanoramaModels.swift`
@@ -61,6 +68,7 @@
 ### 実行コマンド
 - `npm install`
 - `npm run build`
+- `npm run verify:all`
 - `xcodegen generate` (`ios/GigaPanSwift`)
 - `xcodebuild -project GigaPanSwift.xcodeproj -scheme GigaPanSwift -configuration Debug -destination 'generic/platform=iOS' CODE_SIGNING_ALLOWED=NO build`
 - `git init`
@@ -73,6 +81,13 @@
 - `npm run build` 成功
 - 出力: `dist/index.html` 生成確認
 - iOSビルド成功（上記 `xcodebuild` コマンド、exit code 0）
+- `npm run verify:all` でWeb+iOS連続検証が可能
+
+## CI
+- GitHub Actions: `.github/workflows/ci.yml`
+- `push` / `pull_request` で次を自動実行
+  - Web Build（`npm ci` -> `npm run build`）
+  - iOS Build（`xcodegen generate` -> `xcodebuild ... CODE_SIGNING_ALLOWED=NO build`）
 
 ## GitHub
 - リポジトリ: `https://github.com/ichirooo6755/swift-image-stitching-app`

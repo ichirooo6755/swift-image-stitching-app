@@ -25,5 +25,7 @@ targets:
         INFOPLIST_KEY_NSPhotoLibraryUsageDescription: ライブラリの写真を読み込み、パノラマ生成に利用します。
         INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription: 生成したパノラマと高画質切り出し画像を保存するために使用します。
         INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        INFOPLIST_KEY_UISupportedInterfaceOrientations: UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight
+        INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad: UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight
         CURRENT_PROJECT_VERSION: 1
         MARKETING_VERSION: 1.0

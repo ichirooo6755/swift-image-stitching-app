@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:ios": "xcodegen generate --spec ios/GigaPanSwift/project.yml && xcodebuild -project ios/GigaPanSwift/GigaPanSwift.xcodeproj -scheme GigaPanSwift -configuration Debug -destination 'generic/platform=iOS' CODE_SIGNING_ALLOWED=NO build",
+    "verify:all": "npm run build && npm run build:ios"
   },
   "dependencies": {
     "clsx": "2.1.1",

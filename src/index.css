@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Sora", "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic UI", sans-serif;
+  background:
+    radial-gradient(1200px 700px at 12% -8%, rgba(34, 211, 238, 0.15), transparent 68%),
+    radial-gradient(900px 550px at 98% -18%, rgba(16, 185, 129, 0.13), transparent 72%),
+    linear-gradient(155deg, #020617 0%, #020c17 40%, #020617 100%);
+  color: #e5e7eb;
+}
+
+.app-surface {
+  position: relative;
+  isolation: isolate;
+}
+
+.app-surface::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background:
+    radial-gradient(circle at 18% 20%, rgba(34, 211, 238, 0.08), transparent 40%),
+    radial-gradient(circle at 78% 12%, rgba(99, 102, 241, 0.11), transparent 42%),
+    radial-gradient(circle at 50% 100%, rgba(16, 185, 129, 0.07), transparent 46%);
+}

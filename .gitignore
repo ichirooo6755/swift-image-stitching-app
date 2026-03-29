@@ -1,0 +1,18 @@
+# Node / web
+node_modules/
+dist/
+.npm/
+*.log
+
+# macOS
+.DS_Store
+
+# Xcode / iOS
+DerivedData/
+*.xcuserstate
+*.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+
+# Local build artifacts
+ios/GigaPanSwift/build/
+ios/GigaPanSwift/build.log

@@ -1,0 +1,29 @@
+name: GigaPanSwift
+options:
+  minimumXcodeGenVersion: 2.38.0
+
+settings:
+  base:
+    SWIFT_VERSION: 5.10
+    IPHONEOS_DEPLOYMENT_TARGET: "17.0"
+
+targets:
+  GigaPanSwift:
+    type: application
+    platform: iOS
+    deploymentTarget: "17.0"
+    sources:
+      - path: Sources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.sugawara.gigapanswift
+        PRODUCT_NAME: GigaPanSwift
+        TARGETED_DEVICE_FAMILY: "1,2"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: GigaPan Swift
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.photography
+        INFOPLIST_KEY_NSPhotoLibraryUsageDescription: ライブラリの写真を読み込み、パノラマ生成に利用します。
+        INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription: 生成したパノラマと高画質切り出し画像を保存するために使用します。
+        INFOPLIST_KEY_UILaunchScreen_Generation: YES
+        CURRENT_PROJECT_VERSION: 1
+        MARKETING_VERSION: 1.0

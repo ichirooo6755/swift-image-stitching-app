@@ -12,6 +12,9 @@ DerivedData/
 *.xcuserstate
 *.xcworkspace/xcuserdata/
 *.xcodeproj/xcuserdata/
+**/*.xcworkspace/xcuserdata/
+**/*.xcodeproj/xcuserdata/
+ios/GigaPanSwift/GigaPanSwift.xcodeproj/xcuserdata/
 
 # Local build artifacts
 ios/GigaPanSwift/build/

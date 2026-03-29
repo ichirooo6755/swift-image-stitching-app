@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 77;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1F0990E27103274FF29CD9AA /* GigaPanSwift.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = GigaPanSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F0990E27103274FF29CD9AA /* GigaPanSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GigaPanSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		21EAEF5830D9D6EC75A499C7 /* MultiPhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiPhotoPicker.swift; sourceTree = "<group>"; };
 		363230A857454BC229B4B864 /* PanoramaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanoramaViewModel.swift; sourceTree = "<group>"; };
 		678D322A75B8ED9B57614ADE /* GigaPanSwiftApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GigaPanSwiftApp.swift; sourceTree = "<group>"; };
@@ -126,7 +126,6 @@
 			);
 			mainGroup = 347E806572E5059EC54E03E3;
 			minimizedProjectReferenceProxies = 1;
-			preferredProjectObjectVersion = 77;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -221,6 +220,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K5D7GVJFG7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "GigaPan Swift";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
@@ -246,6 +246,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = K5D7GVJFG7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "GigaPan Swift";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.photography";
